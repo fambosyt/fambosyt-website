@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regelwerk - Fambos Netzwerk</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Minecraft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#21212a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Fambos Netzwerk">
+  <link rel="apple-touch-icon" href="img/logo.png">
+
+    <style>
+        /* Angepasster Header für rechtsbündige Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 1.8rem;
+        }
+
+        /* Regelwerk-Styles */
+        .regelwerk-section {
+            padding: 2rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .regelwerk-container {
+            padding: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .regelwerk-container h1 {
+            color: var(--primary);
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .regelwerk-container h2 {
+            color: var(--secondary);
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 0.5rem;
+        }
+
+        .regelwerk-container h3 {
+            color: var(--primary-light);
+            margin: 1.5rem 0 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .regelwerk-container p, 
+        .regelwerk-container ul,
+        .regelwerk-container ol {
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .regelwerk-container ul,
+        .regelwerk-container ol {
+            padding-left: 2rem;
+        }
+
+        .regelwerk-container li {
+            margin-bottom: 0.5rem;
+        }
+
+        .regelwerk-container .rule-category {
+            margin-bottom: 3rem;
+        }
+
+        .regelwerk-container .rule-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--primary);
+        }
+
+        .regelwerk-container .rule-punishment {
+            color: #ff6b6b;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header class="glass">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="FambosYT Logo" class="logo">
+            <h1>FambosYT<span style="color: var(--primary)">.de</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Startseite</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="updates.html"><i class="fas fa-newspaper"></i> Updates</a></li>
+                <li><a href="bewerbung.html"><i class="fas fa-file-alt"></i> Bewerbung</a></li>
+                <li><a href="regelwerk.html" class="active"><i class="fas fa-book"></i> Regelwerk</a></li>
+                <li><a href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="regelwerk-section">
+            <div class="regelwerk-container glass">
+                <h1><i class="fas fa-book"></i> Server Regelwerk</h1>
+                <p>Damit unser Minecraft-Server ein angenehmer Ort für alle Spieler bleibt, bitten wir dich, folgende Regeln zu beachten.</p>
+                
+                <div class="rule-category">
+                    <h2><i class="fas fa-shield-alt"></i> Allgemeine Regeln</h2>
+                    
+                    <div class="rule-item">
+                        <h3>1. Respektvoller Umgang</h3>
+                        <p>Behandle alle Spieler und Teammitglieder mit Respekt. Beleidigungen, Diskriminierung oder Mobbing werden nicht toleriert.</p>
+                        <p class="rule-punishment">Strafe: Mute bis Ban (je nach Schwere)</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <h3>2. Kein Griefing</h3>
+                        <p>Das Zerstören oder Verändern von Bauwerken anderer Spieler ohne deren Erlaubnis ist verboten.</p>
+                        <p class="rule-punishment">Strafe: 7-tägiger Ban + Rückbau</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <h3>3. Kein Cheaten</h3>
+                        <p>Die Verwendung von Hacks, Cheats, Exploits oder anderen unfairen Mitteln ist strengstens untersagt.</p>
+                        <p class="rule-punishment">Strafe: Permanenter Ban</p>
+                    </div>
+                </div>
+                
+                <div class="rule-category">
+                    <h2><i class="fas fa-tree"></i> Survival-Regeln</h2>
+                    
+                    <div class="rule-item">
+                        <h3>1. Kein Griefing</h3>
+                        <p>Das Entwenden von Items aus Truhen oder Lagern oder das zerstören von Gebäuden anderer Spieler ohne Erlaubnis ist nicht erlaubt.</p>
+                        <p class="rule-punishment">Strafe: 3-tägiger Ban + Item-Rückgabe</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <h3>2. PvP-Regeln</h3>
+                        <p>PvP ist nur in dafür vorgesehenen Bereichen oder nach beidseitiger Zustimmung erlaubt.</p>
+                        <p class="rule-punishment">Strafe: 1-tägiger Ban</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <h3>3. Spawn-Schutz</h3>
+                        <p>Im Spawn-Bereich ist Bauen, PvP und jegliche Art von Zerstörung untersagt.</p>
+                        <p class="rule-punishment">Strafe: 7-tägiger Ban + Rückbau</p>
+                    </div>
+                </div>
+                
+                <div class="rule-category">
+                    <h2><i class="fas fa-comments"></i> Chat-Regeln</h2>
+                    
+                    <div class="rule-item">
+                        <h3>1. Kein Spam</h3>
+                        <p>Wiederholtes Senden ähnlicher Nachrichten oder Capslock-Spam ist nicht erlaubt.</p>
+                        <p class="rule-punishment">Strafe: 1-stündiger Mute</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <h3>2. Keine Werbung</h3>
+                        <p>Werbung für andere Server oder Websites ist untersagt.</p>
+                        <p class="rule-punishment">Strafe: 7-tägiger Ban</p>
+                    </div>
+                    
+                    <div class="rule-item">
+                        <h3>3. Keine NSFW-Inhalte</h3>
+                        <p>Unangemessene oder nicht jugendfreie Inhalte sind verboten.</p>
+                        <p class="rule-punishment">Strafe: 14-tägiger Ban</p>
+                    </div>
+                </div>
+                
+                <div class="rule-category">
+                    <h2><i class="fas fa-gavel"></i> Strafen-System</h2>
+                    <p>Verstöße gegen die Regeln werden nach folgendem System geahndet:</p>
+                    <ol>
+                        <li><strong>Verwarnung:</strong> Bei kleineren Verstößen erhältst du eine Verwarnung.</li>
+                        <li><strong>Mute:</strong> Bei Chat-Verstößen kann ein temporärer Chat-Bann verhängt werden.</li>
+                        <li><strong>Temporärer Ban:</strong> Schwerere Verstöße führen zu einem zeitweisen Server-Ausschluss.</li>
+                        <li><strong>Permanenter Ban:</strong> Bei extremen Verstößen oder wiederholtem Fehlverhalten.</li>
+                    </ol>
+                    <p>Das Team behält sich vor, je nach Schwere des Verstoßes von diesem System abzuweichen.</p>
+                </div>
+                
+                <div class="rule-category">
+                    <h2><i class="fas fa-question-circle"></i> Fragen?</h2>
+                    <p>Wenn du Fragen zu den Regeln hast oder unsicher bist, ob etwas erlaubt ist, frage bitte vorher ein Teammitglied.</p>
+                    <p>Die Regeln können sich ändern. Wir empfehlen, diese Seite regelmäßig zu besuchen.</p>
+                    <p><em>Letzte Aktualisierung: April 2025</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Startseite</a>
+                <a href="bewerbung.html">Bewerbung</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Fambos Netzwerk | Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+</body>
+</html>

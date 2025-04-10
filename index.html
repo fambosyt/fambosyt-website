@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fambos Netzwerk</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Minecraft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#21212a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Fambos Netzwerk">
+  <link rel="apple-touch-icon" href="img/logo.png">
+
+    <style>
+        /* Angepasster Header für rechtsbündige Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 1.8rem;
+        }
+
+        /* Regelwerk-Bereich */
+        .rules-section {
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        .rules-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .rules-text {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            color: var(--light);
+        }
+        
+        /* Discord Widget Styling */
+        .discord-section {
+            background-color: var(--dark);
+            padding: 2rem 5%;
+            margin-top: 3rem;
+        }
+        
+        .discord-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .discord-widget {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--light);
+        }
+    </style>
+</head>
+<body>
+    <header class="glass">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="FambosYT Logo" class="logo">
+            <h1>FambosYT<span style="color: var(--primary)">.de</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Startseite</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="updates.html"><i class="fas fa-newspaper"></i> Updates</a></li>
+                <li><a href="bewerbung.html"><i class="fas fa-file-alt"></i> Bewerbung</a></li>
+                <li><a href="regelwerk.html"><i class="fas fa-book"></i> Regelwerk</a></li>
+                <li><a href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero glass">
+            <div class="hero-content">
+                <h1>Willkommen im Fambos Netzwerk</h1>
+                <p>Dein Premium Minecraft 1.21.3+ Server mit einzigartigen Features und einer lebendigen Community</p>
+                <div class="hero-buttons">
+                    <a href="#join" class="btn"><i class="fas fa-play"></i> Jetzt spielen</a>
+                    <a href="#features" class="btn btn-outline"><i class="fas fa-star"></i> Features</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="join">
+            <h2 class="section-title">Server Informationen</h2>
+            <div class="server-info">
+                <div class="info-box glass">
+                    <i class="fas fa-server" style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                    <h3>Server IP</h3>
+                    <p>FambosYT.de</p>
+                </div>
+                <div class="info-box glass">
+                    <i class="fas fa-users" style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                    <h3>Registrierte Spieler</h3>
+                    <p>25+</p>
+                </div>
+                <div class="info-box glass">
+                    <i class="fas fa-cube" style="font-size: 2rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                    <h3>Version</h3>
+                    <p>1.21.1+</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 class="section-title">Unsere Features</h2>
+            <div class="features-grid">
+                <div class="feature-card glass">
+                    <div class="feature-icon"><i class="fas fa-tree"></i></div>
+                    <h3>Survival 2.0</h3>
+                    <p>Erweitertes Survival mit einzigartigen Mechaniken, Economy-System und Jobs</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Premium Events</h3>
+                    <p>Tägliche Events mit exklusiven Belohnungen und besonderen Herausforderungen</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon"><i class="fas fa-gamepad"></i></div>
+                    <h3>Minigames</h3>
+                    <p>Über 5 einzigartige Minigames für schnellen Spielspaß mit Freunden</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon"><i class="fas fa-city"></i></div>
+                    <h3>Städte System</h3>
+                    <p>Erschaffe oder trete Städten bei und baue gemeinsam beeindruckende Metropolen</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Custom Items</h3>
+                    <p>Einzigartige Items und Waffen, die du nur auf unserem Server findest</p>
+                </div>
+                <div class="feature-card glass">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Fair Play</h3>
+                    <p>Aktive Moderation und Anti-Cheat für ein faires Spielerlebnis</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Discord Widget Section -->
+        <section class="discord-section">
+            <div class="discord-container">
+                <h2 class="section-title">Trete den FambosYT.de Discord bei</h2>
+                <iframe src="https://discordapp.com/widget?id=1333113607411728495&theme=dark" class="discord-widget" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Startseite</a>
+                <a href="bewerbung.html">Bewerbung</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Fambos Netzwerk | Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+</body>
+</html>

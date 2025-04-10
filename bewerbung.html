@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerbung - Fambos Netzwerk</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Minecraft&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#21212a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Fambos Netzwerk">
+  <link rel="apple-touch-icon" href="img/logo.png">
+
+    <script src="bewerbung.js"></script>
+
+    <style>
+        /* Angepasster Header für rechtsbündige Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+        }
+        
+        nav ul {
+            display: flex;
+            gap: 1.8rem;
+        }
+
+        /* Erfolgsmeldung */
+        .success-message {
+            display: none;
+            background: rgba(76, 175, 80, 0.2);
+            border: 1px solid var(--primary);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .success-message i {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="glass">
+        <div class="logo-container">
+            <img src="img/logo.png" alt="FambosYT Logo" class="logo">
+            <h1>FambosYT<span style="color: var(--primary)">.de</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Startseite</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="updates.html"><i class="fas fa-newspaper"></i> Updates</a></li>
+                <li><a href="bewerbung.html" class="active"><i class="fas fa-file-alt"></i> Bewerbung</a></li>
+                <li><a href="regelwerk.html"><i class="fas fa-book"></i> Regelwerk</a></li>
+                <li><a href="kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero glass">
+            <div class="hero-content">
+                <h1>Team Bewerbung</h1>
+                <p>Werden Sie Teil unseres Teams und gestalten Sie den Server mit!</p>
+            </div>
+        </section>
+
+        <section class="application-section">
+            <div id="successMessage" class="success-message glass">
+                <i class="fas fa-check-circle"></i>
+                <h3>Bewerbung erfolgreich abgeschickt!</h3>
+                <p>Vielen Dank für deine Bewerbung. Wir werden uns in Kürze bei dir melden.</p>
+            </div>
+
+            <div class="application-container glass">
+                <h2 class="section-title"><i class="fas fa-users-cog"></i> Verfügbare Positionen</h2>
+                
+                <div class="positions-grid">
+                    <div class="position-card glass">
+                        <div class="position-icon"><i class="fas fa-star"></i></div>
+                        <h3>Administration</h3>
+                        <ul class="position-requirements">
+                            <li><i class="fas fa-check"></i> Mindestens 16 Jahre alt</li>
+                            <li><i class="fas fa-check"></i> Gute Deutsch- und Englischkenntnisse</li>
+                            <li><i class="fas fa-check"></i> Erfahrung mit Minecraft</li>
+                            <li><i class="fas fa-check"></i> Teamfähigkeit</li>
+                            <li><i class="fas fa-check"></i> Moderationsfähig</li>
+                        </ul>
+                    </div>
+
+                    <div class="position-card glass">
+                        <div class="position-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Moderator</h3>
+                        <ul class="position-requirements">
+                            <li><i class="fas fa-check"></i> Mindestens 14 Jahre alt</li>
+                            <li><i class="fas fa-check"></i> Gute Deutschkenntnisse</li>
+                            <li><i class="fas fa-check"></i> Erfahrung mit Minecraft</li>
+                            <li><i class="fas fa-check"></i> Teamfähigkeit</li>
+                        </ul>
+                    </div>
+
+                    <div class="position-card glass">
+                        <div class="position-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Supporter</h3>
+                        <ul class="position-requirements">
+                            <li><i class="fas fa-check"></i> Mindestens 14 Jahre alt</li>
+                            <li><i class="fas fa-check"></i> Gute Deutschkenntnisse</li>
+                            <li><i class="fas fa-check"></i> Erfahrung mit Minecraft</li>
+                            <li><i class="fas fa-check"></i> Erfahrung mit WorldEdit</li>
+                            <li><i class="fas fa-check"></i> Teamfähigkeit</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="position-card glass">
+                        <div class="position-icon"><i class="fas fa-code"></i></div>
+                        <h3>Developer</h3>
+                        <ul class="position-requirements">
+                            <li><i class="fas fa-check"></i> Mindestens 16 Jahre alt</li>
+                            <li><i class="fas fa-check"></i> Java-Kenntnisse</li>
+                            <li><i class="fas fa-check"></i> Erfahrung mit Spigot/Paper</li>
+                            <li><i class="fas fa-check"></i> Portfolio erwünscht</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="position-card glass">
+                        <div class="position-icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Builder</h3>
+                        <ul class="position-requirements">
+                            <li><i class="fas fa-check"></i> Kreativität</li>
+                            <li><i class="fas fa-check"></i> Erfahrung mit WorldEdit</li>
+                            <li><i class="fas fa-check"></i> Portfolio erwünscht</li>
+                        </ul>
+                    </div>
+
+                    <div class="position-card glass">
+                        <div class="position-icon"><i class="fas fa-bolt"></i></div>
+                        <h3>BETA Tester</h3>
+                        <ul class="position-requirements">
+                            <li><i class="fas fa-check"></i> Mindestens 14 Jahre alt</li>
+                            <li><i class="fas fa-check"></i> Kentnisse von Minecraft / Minecraft Servern</li>
+                            <li><i class="fas fa-check"></i> starken PC</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="application-form-container glass">
+                <h2 class="section-title"><i class="fas fa-edit"></i> Bewerbungsformular</h2>
+                
+                <form id="applicationForm" class="application-form">
+                    <div class="form-group">
+                        <label for="applicant-name">Name</label>
+                        <input type="text" id="applicant-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="applicant-age">Alter</label>
+                        <input type="number" id="applicant-age" min="12" max="99" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="applicant-discord">Discord Tag</label>
+                        <input type="text" id="applicant-discord" placeholder="Benutzername#0000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="applicant-position">Bewerbung als</label>
+                        <select id="applicant-position" required>
+                            <option value="">-- Position wählen --</option>
+                            <option value="admin">Administration</option>
+                            <option value="moderator">Moderator</option>
+                            <option value="supporter">Supporter</option>
+                            <option value="developer">Developer</option>
+                            <option value="builder">Builder</option>
+                            <option value="beta">BETA Tester</option>
+                            <option value="other">Andere</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="applicant-experience">Erfahrung</label>
+                        <textarea id="applicant-experience" rows="4" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="applicant-motivation">Warum möchtest du Teil des Teams werden?</label>
+                        <textarea id="applicant-motivation" rows="6" required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="applicant-portfolio">Portfolio/Links (optional)</label>
+                        <textarea id="applicant-portfolio" rows="3"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Bewerbung absenden</button>
+                </form>
+            </div>
+            
+            <div class="application-info glass">
+                <h3><i class="fas fa-info-circle"></i> Wichtige Informationen</h3>
+                <ul>
+                    <li>Wir bearbeiten Bewerbungen innerhalb von 14 Tagen</li>
+                    <li>Du erhältst eine Antwort per Discord</li>
+                    <li>Bei Fragen kontaktiere uns über das Kontaktformular</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Startseite</a>
+                <a href="bewerbung.html">Bewerbung</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-discord"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2025 Fambos Netzwerk | Alle Rechte vorbehalten</p>
+        </div>
+    </footer>
+
+    <script>
+        // Aktives Menü-Highlighting
+        document.querySelectorAll('nav a').forEach(link => {
+            if(link.href === window.location.href) {
+                link.classList.add('active');
+            }
+        });
+
+        // Formular Handling
+        document.getElementById('applicationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Formulardaten sammeln
+            const formData = {
+                name: document.getElementById('applicant-name').value,
+                age: document.getElementById('applicant-age').value,
+                discord: document.getElementById('applicant-discord').value,
+                position: document.getElementById('applicant-position').value,
+                experience: document.getElementById('applicant-experience').value,
+                motivation: document.getElementById('applicant-motivation').value,
+                portfolio: document.getElementById('applicant-portfolio').value
+            };
+
+            // Positionstext für die Anzeige
+            const positionText = {
+                'admin': 'Administration',
+                'moderator': 'Moderator',
+                'supporter': 'Supporter',
+                'developer': 'Developer',
+                'builder': 'Builder',
+                'beta': 'BETA Tester',
+                'other': 'Andere'
+            };
+
+            // Discord Embed erstellen
+            const embed = {
+                title: "Neue Team Bewerbung",
+                color: 0x4CAF50, // Grüne Farbe
+                fields: [
+                    {
+                        name: "Name",
+                        value: formData.name,
+                        inline: true
+                    },
+                    {
+                        name: "Alter",
+                        value: formData.age,
+                        inline: true
+                    },
+                    {
+                        name: "Discord Tag",
+                        value: formData.discord,
+                        inline: true
+                    },
+                    {
+                        name: "Beworben als",
+                        value: positionText[formData.position] || formData.position,
+                        inline: true
+                    },
+                    {
+                        name: "Erfahrung",
+                        value: formData.experience.length > 1024 ? formData.experience.substring(0, 1021) + "..." : formData.experience
+                    },
+                    {
+                        name: "Motivation",
+                        value: formData.motivation.length > 1024 ? formData.motivation.substring(0, 1021) + "..." : formData.motivation
+                    }
+                ],
+                timestamp: new Date().toISOString()
+            };
+
+            // Portfolio hinzufügen, falls vorhanden
+            if (formData.portfolio) {
+                embed.fields.push({
+                    name: "Portfolio/Links",
+                    value: formData.portfolio.length > 1024 ? formData.portfolio.substring(0, 1021) + "..." : formData.portfolio
+                });
+            }
+
+            // Daten an Discord senden
+            fetch(WEBHOOK_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    embeds: [embed],
+                    username: "Fambos Netzwerk Bewerbungen",
+                    avatar_url: "https://i.imgur.com/T5IaTzT.jpeg"
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Erfolgsmeldung anzeigen
+                    document.getElementById('successMessage').style.display = 'block';
+                    document.getElementById('applicationForm').reset();
+                    
+                    // Nach 5 Sekunden zurückscrollen
+                    setTimeout(() => {
+                        document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                } else {
+                    alert('Es gab ein Problem beim Senden der Bewerbung. Bitte versuche es später erneut.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Es gab ein Problem beim Senden der Bewerbung. Bitte versuche es später erneut.');
+            });
+        });
+    </script>
+</body>
+</html>
