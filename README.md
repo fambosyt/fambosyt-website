@@ -1,7 +1,30 @@
-// Official Template for a Minecraft Website
+# 🌐 Minecraft Website Template
 
-1. Download the packages
-2. Modify all files as you wish
-3. The are no copyright on this pages!
+Dies ist der Code für eine Minecraft Website – gebaut mit 💻 und viel Zeit.
 
-   Have fun and create everything
+## 📋 Inhalt
+
+- Startseite
+- Regelwerk
+- Teamseite
+- Kontakt
+- Rechtliches
+... und mehr!
+
+## 🚀 Technologien
+
+- HTML & CSS
+- JavaScript
+- Modernes Design
+
+## 🌍 Live-Version
+
+👉 [https://fambosyt.de](https://www.fambosyt.de)
+
+## 📦 Lokale Entwicklung
+
+So startest du das Projekt lokal auf deinem Rechner:
+
+- Downloade alle Dateien
+- Füre die Index.html Datei aus und sieh dir die Seite an
+- Änder alle Dateien für deine Verhältnisse
