@@ -1,6 +1,6 @@
 {
-  "name": "Fambos Netzwerk",
-  "short_name": "FambosYT.de",
+  "name": "Minecraft Server",
+  "short_name": "deinserver.de",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#21212a",
@@ -18,3 +18,4 @@
     }
   ]
 }
+
