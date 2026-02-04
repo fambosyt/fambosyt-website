@@ -19,7 +19,7 @@ Dies ist der Code für eine Minecraft Website – gebaut mit 💻 und viel Zeit.
 
 ## 🌍 Live-Version
 
-👉 [https://mcserver-webtemplate.fambosyt.eu/](https://mcserver-webtemplate.fambosyt.eu/)
+👉 [https://passwortgenerator.fambosyt.eu/](https://passwortgenerator.fambosyt.eu/)
 
 ## 📦 Lokale Entwicklung
 
